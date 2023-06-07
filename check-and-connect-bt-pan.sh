@@ -2,7 +2,7 @@
 
 # Edit this to match your MAc/PC/Other device that's providing the Bluetooth network access
 
-BT_MAC_ADDR=F4:5C:89:8B:10:E8
+BT_MAC_ADDR=2C:7C:F2:AB:0F:08
 
 SCRIPT=$(readlink -f $0)
 SCRIPTPATH=`dirname $SCRIPT`
