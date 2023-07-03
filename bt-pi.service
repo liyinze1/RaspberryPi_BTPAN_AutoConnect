@@ -1,0 +1,16 @@
+[Unit]
+Description=Bluetooth auto conn
+After=network.target
+
+[Service]
+AmbientCapabilities=CAP_NET_BIND_SERVICE
+ExecStart=sudo -E bash check-and-connect-bt-pan.sh
+WorkingDirectory=/home/pi/RaspberryPi_BTPAN_AutoConnect
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+RestartSec=10s
+User=pi
+
+[Install]
+WantedBy=multi-user.target

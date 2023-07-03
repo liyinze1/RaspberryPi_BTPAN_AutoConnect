@@ -13,5 +13,3 @@ if [ $status -ne 0 ]; then
 	echo "Connecting to $BT_MAC_ADDR"
 	$SCRIPTPATH/bt-pan client -r  $BT_MAC_ADDR
 fi
-
-
